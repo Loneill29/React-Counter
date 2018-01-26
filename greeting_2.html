@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First React App</title>
+  </head>
+
+  <body>
+    <div id="newApp"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+        <script type="text/babel">
+          class Photo extends React.Component {
+            render() {
+              return (
+                <div>
+                  <img src="http://r.ddmcdn.com/s_f/o_1/w_1024/h_671/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg" alt="cat photo"/>
+                </div>
+              );
+            }
+          }
+          ReactDOM.render(
+            <Photo />, document.getElementById('newApp')
+          );
+        </script>
+    </body>
+</html>
